@@ -10,7 +10,7 @@ class Librarian {
  
  
  String toString(){
- "$name, $email, $userName, $password, $telephone"
+ "$name"
  }
 
     static constraints = {

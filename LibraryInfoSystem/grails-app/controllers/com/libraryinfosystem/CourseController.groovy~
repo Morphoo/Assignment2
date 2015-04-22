@@ -1,0 +1,6 @@
+package com.libraryinfosystem
+
+class CourseController {
+
+    def index() { }
+}

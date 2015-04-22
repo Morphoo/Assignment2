@@ -1,0 +1,23 @@
+package com.libraryinfosystem
+
+class Student {
+
+String name
+String post
+String email
+String department
+String subject
+String research
+String toString() {name}
+
+static constraints = {
+
+name()
+post()
+email()
+department()
+subject()
+research()
+
+}
+}
