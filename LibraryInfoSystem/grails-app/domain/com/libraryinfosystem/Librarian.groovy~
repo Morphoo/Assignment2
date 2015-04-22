@@ -1,0 +1,7 @@
+package com.libraryinfosystem
+
+class Librarian {
+
+    static constraints = {
+    }
+}
