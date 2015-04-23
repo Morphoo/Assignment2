@@ -9,9 +9,8 @@ class Librarian {
  String telephone
  
  
- String toString(){
- "$name"
- }
+ String toString() {name} 
+ 
 
     static constraints = {
     }

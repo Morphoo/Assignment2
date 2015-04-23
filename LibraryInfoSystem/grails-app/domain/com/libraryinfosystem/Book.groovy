@@ -7,8 +7,9 @@ String author
 String isbn
 Date dateBorrowed
 Date returnDate
-Student student
+Student student
 
+static hasMany=[students: Student]
 String toString() {title}
 
 static constraints = {

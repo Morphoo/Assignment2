@@ -8,7 +8,8 @@ Book   book
 Student student
 Librarian librarian
 
-static hasMany=[books: Book]
+static hasMany=[books: Book,students: Student,librarians: Librarian]
+
 String toString() {location}
 
 static constraints = {
@@ -16,7 +17,6 @@ static constraints = {
 location()
 openingHours()
 book()
-student()
 librarian()
 
    }
