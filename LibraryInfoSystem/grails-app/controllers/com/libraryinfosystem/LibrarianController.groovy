@@ -4,6 +4,7 @@ package com.libraryinfosystem
 
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
+import grails.converters.*
 
 @Transactional(readOnly = true)
 class LibrarianController {
@@ -125,6 +126,8 @@ def logout = {
 	 flash.message = "Invalid username and password."
 	 render view:'login'
 	}
+ 
  }
 }
+
 

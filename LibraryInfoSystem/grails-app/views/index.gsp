@@ -42,5 +42,17 @@
  <g:link controller="librarian" action="create">Add Librarian</g:link>
  </span>
  </div>
+ <div class="homeCell">
+ <h3>List Books</h3> 
+ <span class="buttons" >
+ <g:link controller="library" action="listBooks">List Books</g:link>
+ </span>
+ </div>
+ <div class="homeCell">
+ <h3>List Students</h3> 
+ <span class="buttons" >
+ <g:link controller="student" action="listDetails">List Details</g:link>
+ </span>
+ </div>
  </body>
 </html>

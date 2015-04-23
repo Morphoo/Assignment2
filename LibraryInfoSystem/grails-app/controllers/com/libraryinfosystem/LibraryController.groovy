@@ -4,6 +4,7 @@ package com.libraryinfosystem
 
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
+import grails.converters.*
 
 @Transactional(readOnly = true)
 class LibraryController {
@@ -100,5 +101,14 @@ class LibraryController {
             }
             '*'{ render status: NOT_FOUND }
         }
+      }
+def listBooks() {
+  if(params.title && Book.exists(params.title))
+  {
+    render Book.findByTitle(params.title) as XML
+    }else
+    {
+    render Book.list() as XML
     }
+   } 
 }

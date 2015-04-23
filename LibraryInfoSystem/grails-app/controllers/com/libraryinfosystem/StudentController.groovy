@@ -4,6 +4,8 @@ package com.libraryinfosystem
 
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
+import grails.converters.*
+
 
 @Transactional(readOnly = true)
 class StudentController {
@@ -101,4 +103,13 @@ class StudentController {
             '*'{ render status: NOT_FOUND }
         }
     }
+    def listDetails() {
+  if(params.name && Student.exists(params.name))
+  {
+    render Book.findByName(params.name) as JSON
+    }else
+    {
+    render Book.list() as JSON
+    }
+   }
 }
