@@ -32,7 +32,7 @@
 					
 						<g:sortableColumn property="telephone" title="${message(code: 'librarian.telephone.label', default: 'Telephone')}" />
 					
-						<g:sortableColumn property="username" title="${message(code: 'librarian.username.label', default: 'User Name')}" />
+						<g:sortableColumn property="username" title="${message(code: 'librarian.userName.label', default: 'User Name')}" />
 					
 					</tr>
 				</thead>

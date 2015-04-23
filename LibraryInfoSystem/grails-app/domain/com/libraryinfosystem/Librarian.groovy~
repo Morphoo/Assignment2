@@ -4,7 +4,7 @@ class Librarian {
 
  String name
  String email
- String userName
+ String username
  String password
  String telephone
  
@@ -13,5 +13,10 @@ class Librarian {
  
 
     static constraints = {
+name()
+email()
+username()
+password()
+telephone()
     }
 }

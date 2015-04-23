@@ -96,8 +96,13 @@ class LibrarianController {
 
 if (params.cName)
  return [cName:params.cName, aName:params.aName]
-
 }
+
+def logout = {
+ session.user = null
+ redirect(uri:'/')
+ }
+
 
     protected void notFound() {
         request.withFormat {
@@ -109,7 +114,7 @@ if (params.cName)
         }
     }
 	def validate() {
-	 def user = Librarian.findByUserName(params.userName)
+	 def user = Librarian.findByUsername(params.username)
 	 if (user && user.password == params.password){
 	 session.user = user
 	 if (params.cName)

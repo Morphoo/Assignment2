@@ -23,11 +23,12 @@
  </span>
  </div>
  <div class="homeCell">
- <h3>Add Modules</h3> 
+ <h3>About the Modules</h3> 
  <span class="buttons" >
  <g:link controller="student" action="create">Add Student</g:link>
  </span>
  </div>
+ </body>
 </html>
 <div class="homeCell">
  <h3>About the Modules</h3> 
@@ -35,6 +36,7 @@
  <g:link controller="course" action="create">Add Course</g:link>
  </span>
  </div>
+ </body>
 </html>
 <div class="homeCell">
  <h3>About the Modules</h3> 

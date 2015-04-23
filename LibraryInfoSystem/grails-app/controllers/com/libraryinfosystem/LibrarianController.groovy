@@ -114,13 +114,13 @@ def logout = {
         }
     }
 	def validate() {
-	 def user = Librarian.findByUserName(params.userName)
+	 def user = Librarian.findByUsername(params.username)
 	 if (user && user.password == params.password){
 	 session.user = user
 	 if (params.cName)
 	 redirect controller:params.cName, action:params.aName
 	 else
-	 redirect controller:'course', action:'index'
+	 redirect controller:'Librarian', action:'index'
 	 } else{
 	 flash.message = "Invalid username and password."
 	 render view:'login'
